@@ -5,9 +5,9 @@ const FetchData = () => {
     const [apiData, setApiData] = useState([]);
 
     useEffect(() => {
-        fetch('https://api.punkapi.com/v2/beers')
+        fetch('https://hn.algolia.com/api/v1/search?tags=front_page')
             .then(res => res.json())
-            .then(data => setApiData(data));
+            .then(data => setApiData(data.hits));
             console.log(apiData)
     }, [])
 
@@ -18,7 +18,9 @@ const FetchData = () => {
             {!apiData ? (
                 <h1>Failed to Load</h1>
             ) : (
-              apiData.map((beer)=> <li>{beer.name}</li>)
+               
+            //   apiData.map((beer) => <li>{beer}</li>)
+                <div>PlaceHolder</div>
             )}
 
         </ul>
