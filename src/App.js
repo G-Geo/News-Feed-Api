@@ -1,11 +1,15 @@
 import './App.css';
+import FetchData from './Components/FetchData'
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
     
-      </header>
+      <FetchData className="App-header">
+       
+      </FetchData>
+    
     </div>
   );
 }
