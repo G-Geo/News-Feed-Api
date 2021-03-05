@@ -1,13 +1,19 @@
-import FrontPage from './Components/FrontPage'
+import FrontPage from './Components/FrontPage/FrontPage'
+import './App.css'
+import logo from "./logo.svg"
 
 function App() {
   return (
-
+ 
     <div className="App">
-    
-      <FrontPage className="App-header">
-       
-      </FrontPage>
+
+      <header className="FrontPageHeader">
+        <img src={logo} className="logo" alt="Logo"></img>
+        <h1 className="SearchText">Search Hacker News</h1>
+      </header>
+
+ 
+      <FrontPage></FrontPage>
     
     </div>
   );

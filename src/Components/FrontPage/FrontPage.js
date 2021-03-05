@@ -21,8 +21,8 @@ const FrontPage = () => {
             ) : (
                
               apiData.map((list, index) => {
-              return (
-              <FrontPageCards key={index} title={list.title} author={list.author} url={list.url}></FrontPageCards>
+              return ( 
+              <FrontPageCards key={index} title={list.title} points={list.points} author={list.author} comments={list.num_comments} url={list.url}></FrontPageCards>
               )
 
               

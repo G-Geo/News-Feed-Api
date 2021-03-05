@@ -1,0 +1,12 @@
+body {
+  background-color: #BC986A;
+}
+
+.FrontPageHeader{
+  display: flex;
+  margin-bottom: 5%;
+ }
+ 
+.logo{
+  height: 80px;
+}
