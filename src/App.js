@@ -1,14 +1,13 @@
-import './App.css';
-import FetchData from './Components/FetchData'
+import FrontPage from './Components/FrontPage'
 
 function App() {
   return (
 
     <div className="App">
     
-      <FetchData className="App-header">
+      <FrontPage className="App-header">
        
-      </FetchData>
+      </FrontPage>
     
     </div>
   );

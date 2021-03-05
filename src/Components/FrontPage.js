@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import FrontPageCards from "./FrontPageCards"
 
-const FetchData = () => {
+const FrontPage = () => {
 
     const [apiData, setApiData] = useState([]);
 
@@ -9,7 +10,7 @@ const FetchData = () => {
             .then(res => res.json())
             .then(data => setApiData(data.hits));
             console.log(apiData)
-    }, [])
+    },[])
 
 
 
@@ -19,8 +20,14 @@ const FetchData = () => {
                 <h1>Failed to Load</h1>
             ) : (
                
-            //   apiData.map((beer) => <li>{beer}</li>)
-                <div>PlaceHolder</div>
+              apiData.map((list, index) => {
+              return (
+              <FrontPageCards key={index} title={list.title} author={list.author} url={list.url}>{list.title}</FrontPageCards>
+              )
+
+              
+            })
+                // <div>PlaceHolder</div>
             )}
 
         </ul>
@@ -29,4 +36,4 @@ const FetchData = () => {
 
 
 
-export default FetchData
+export default FrontPage
