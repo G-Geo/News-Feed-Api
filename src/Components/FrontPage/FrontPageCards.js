@@ -13,7 +13,7 @@ function FrontPageCards(props){
 
                 <div className="BottomContainer">
                     <div>{props.points} points</div>
-                    <div>|| {props.author}</div>
+                    <div>|| {props.author} </div>
                     <div>|| {props.comments} comments</div>
 
                 </div>
